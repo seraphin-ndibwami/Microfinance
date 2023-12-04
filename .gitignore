@@ -1,0 +1,6 @@
+# Dossiers générés par Composer
+/vendor/
+
+# Fichiers de verrouillage de Composer
+composer.lock
+
