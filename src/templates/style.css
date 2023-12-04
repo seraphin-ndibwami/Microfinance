@@ -1,0 +1,358 @@
+/* Réinitialisation des marges et des paddings */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* root */
+:root{
+    --white:#fff;
+    --black:#000;
+    --primary-blue:rgb(64, 88, 227);
+    --secondary-blue:#0F9BF3;
+    --buttonPrimary:#3751E4;
+    --Gray:#ececec;
+    --secondaryGray:#7D7D7D;
+}
+
+/* Suppression des styles par défaut des liens */
+a {
+    text-decoration: none; 
+    color: inherit; 
+}
+i, i svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.modeclair, div.modesombre{
+    transition: all .3s;
+}
+div.modeclair.active, div.modesombre.active{
+    background-color: var(--Gray);
+}
+button.search{
+    border: none; 
+    border-radius: 0px 5px 5px 0px;
+    background-color: #0F9BF3;
+    fill: none;
+    padding: 0px .5rem;
+    stroke:var(--white)
+}
+
+input {
+    border: none; 
+    outline: none; 
+}
+input[type="search"]{
+    padding: .5rem 1rem;
+    font-size: small;
+    border-right: none;
+    border-radius: 5px 0px 0px 5px;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items:stretch;
+    width: 100vw;
+    height: 100vh;
+}
+div.page{
+    width: 80vw;
+    background-color: var(--Gray);
+    position: relative;
+}
+div.donne{
+    padding: 1rem 5rem;
+}
+div.statistiques{
+    font-size: small;
+}
+div.baredetitre{
+    padding: .5rem 1rem .5rem 5rem;
+    background-color: var(--white);
+    font-size: small;
+}
+
+/* page connexion */
+div.pageConnexion{
+    display: flex;
+    width: 100%;
+    padding: 10vh 30vh;
+}
+div.sectionConnexion{
+    width: 50%;
+    gap: 3rem;
+    padding: 30px 100px;
+}
+div.divMessage, div.divBouton {
+    width:100%;
+}
+p.text{
+    font-size: small;
+}
+div.Sectiongauche{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+div.aproppos{
+    top: 5rem;
+    position: absolute;
+    width: 62%;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+}
+p.object{
+    font-size: small;
+    text-align: justify;
+}
+
+
+/* quelques divs */
+div.pagecontenu{
+}
+div.bd20{
+    border-radius: 20px;
+}
+div.bd10{
+    border-radius: 10px;
+}
+div.bd5{
+    border-radius: 5px;
+}
+div.pd11{
+    padding: 1rem 1rem;
+}
+div.pd22{
+    padding: 2rem rem;
+}
+div.pd051{
+    padding: .5rem 1rem;
+}
+div.pd052{
+    padding: .5rem 2rem;
+}
+div.sh443012{
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.12);
+}
+div.sh44412{
+    box-shadow: 4px 4px 4px  rgba(0, 0, 0, .12);
+}
+div.frc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.fce{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+div.frb{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div.fc{
+    display: flex;
+    align-items: center;
+}
+div.fcs{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+div.fcstretch{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: stretch;
+}
+div.fre{
+    display: flex;
+    align-items: flex-end;
+}
+div.frestretch{
+    display: flex;
+    align-items: stretch;
+}
+div.divInput{
+    gap: .6rem;
+    width:100%;
+}
+div.lbr{
+    border-bottom: 1px solid var(--Gray);
+}
+div.carte{
+    display: flex;
+    width: 100%;
+}
+div.lb{
+    border-bottom: 1px solid var(--secondaryGray);
+}
+div.support{
+    padding: 2rem 2rem;
+    background-color: var(--white);
+}
+.gap05{
+    gap: .5rem;
+}
+.pdg05{
+    padding: .5rem;
+}
+.gap1{
+    gap: 1rem;
+}
+.pdg1{
+    padding: 1rem;
+}
+.gap2{
+    gap: 2rem;
+}
+.pdg2{
+    padding: 2rem;
+}
+.gap3{
+    gap: 3rem;
+}
+.pdg3{
+    padding: 3rem;
+}
+.gap4{
+    gap: 4rem;
+}
+.pdg4{
+    padding: 4rem;
+}
+.with100{
+    min-width: 100px;
+}
+.with150{
+    min-width: 150px;
+}
+.with200{
+    min-width: 200px;
+}
+.with300{
+    min-width: 300px;
+}
+.bgwhite{
+    background-color: var(--white);
+}
+
+/* formulaires */
+form.fcs{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+form.deux{
+    gap: 2rem;
+}
+form.searchform{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+/* inputs */
+input{
+    width:100%;
+    min-width: 200px;
+    padding: .7rem 1.5rem;
+    border-radius: 5px;
+    border: 1px solid var(--secondaryGray);
+}
+input.pc::placeholder{
+    color: var(--black);
+}
+/* buttons */
+button.btn{
+    padding: .5rem 2rem;
+    border: none;
+    border-radius: 5px;
+}
+button.btn-primary{
+    font-weight: bold;
+    color: var(--white);
+    background-color: var(--primary-blue);
+}
+
+/* labels */
+label.lb{
+    font-size: small;
+    color: var(--secondaryGray);
+}
+
+
+/* barelaterale */
+div.contenu{
+    width: 100vw;
+    background-color: var(--Gray);
+}
+div.baralaterale{
+    min-width: 20VW;
+    background-color: var(--white);
+    align-items: stretch !important;
+}
+div.nomApp{
+    padding: .5rem 1rem 2rem 1rem;
+}
+div.menus{
+    padding-left: .5rem;
+    align-items: stretch !important;
+}
+div.menu{
+    padding: 1rem 2rem;
+    transition: all .3s;
+}
+div.menu:hover{
+    background-color: var(--secondary-blue);
+    color: var(--white);
+    fill: var(--white);
+}
+
+/* table */
+table {
+    width: 100%;
+    border-collapse:collapse;
+}
+thead{
+    /* display: flex; */
+    padding: 0px 0px 40px 0px;
+}
+table tr:first-child th:first-child{
+    border-radius: 10px 0px 0px 0px;
+}
+table tr:first-child th:last-child{
+    background-color: var(--secondary-blue);
+    color: var(--white); 
+    border-radius: 0px 10px 0px 0px;
+}
+table th {
+    font-size: small;
+    padding: 10px; 
+}
+
+
+table td {
+    text-align: right;
+    font-size: small;
+    padding: 10px 15px;
+}
+
+
+table tr:nth-child(even) {
+    background-color: var(--Gray); 
+}
+
+table tr:nth-child(odd) {
+    background-color: var(--white);
+}

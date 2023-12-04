@@ -1,0 +1,215 @@
+/* Réinitialisation des marges et des paddings */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* root */
+:root{
+    --white:#fff;
+    --black:#000;
+    --primary-blue:rgb(64, 88, 227);
+    --secondary-blue:#0F9BF3;
+    --buttonPrimary:#3751E4;
+    --Gray:#ececec;
+    --secondaryGray:#7D7D7D;
+}
+
+/* Suppression des styles par défaut des liens */
+a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+input {
+    border: none; 
+    outline: none; 
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items:stretch;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* page connexion */
+div.pageConnexion{
+    display: flex;
+    width: 100%;
+    padding: 10vh 30vh;
+}
+div.sectionConnexion{
+    width: 50%;
+    gap: 3rem;
+    padding: 30px 100px;
+}
+div.divMessage, div.divBouton {
+    width:100%;
+}
+p.text{
+    font-size: small;
+}
+div.Sectiongauche{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+div.aproppos{
+    top: 5rem;
+    position: absolute;
+    width: 62%;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+}
+p.object{
+    font-size: small;
+    text-align: justify;
+}
+
+
+/* quelques divs */
+div.pagecontenu{
+
+}
+div.bd20{
+    border-radius: 20px;
+}
+div.bd10{
+    border-radius: 10px;
+}
+div.bd5{
+    border-radius: 5px;
+}
+div.sh443012{
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.12);
+}
+div.frc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.fc{
+    display: flex;
+    align-items: center;
+}
+div.fcs{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+div.fre{
+    display: flex;
+    align-items: flex-end;
+}
+div.frestretch{
+    display: flex;
+    align-items: stretch;
+}
+div.divInput{
+    gap: .6rem;
+    width:100%;
+}
+div.lbr{
+    border-bottom: 1px solid var(--Gray);
+}
+div.carte{
+    display: flex;
+    width: 100%;
+}
+div.lb{
+    border-bottom: 1px solid var(--secondaryGray);
+}
+div.support{
+    padding: 2rem 2rem;
+    background-color: var(--white);
+}
+div.gap1{
+    gap: 1rem;
+}
+div.gap2{
+    gap: 2rem;
+}
+div.gap3{
+    gap: 3rem;
+}
+div.gap4{
+    gap: 4rem;
+}
+
+/* formulaires */
+form.fcs{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+form.deux{
+    gap: 2rem;
+}
+
+/* inputs */
+input{
+    width:100%;
+    min-width: 200px;
+    padding: .7rem 1.5rem;
+    border-radius: 5px;
+    border: 1px solid var(--secondaryGray);
+}
+input.pc::placeholder{
+    color: var(--black);
+}
+/* buttons */
+button.btn{
+    padding: .5rem 2rem;
+    border: none;
+    border-radius: 5px;
+}
+button.btn-primary{
+    font-weight: bold;
+    color: var(--white);
+    background-color: var(--primary-blue);
+}
+
+/* labels */
+label.lb{
+    font-size: small;
+    color: var(--secondaryGray);
+}
+
+
+/* barelaterale */
+div.contenu{
+    width: 100vw;
+    background-color: var(--Gray);
+}
+div.baralaterale{
+    width: 20%;
+    background-color: var(--white);
+    align-items: stretch !important;
+}
+div.nomApp{
+    padding: .5rem 1rem 2rem 1rem;
+}
+div.menus{
+    padding-left: .5rem;
+    align-items: stretch !important;
+}
+div.menu{
+    padding: 1rem 2rem;
+    transition: all .3s;
+}
+div.menu:hover{
+    background-color: var(--secondary-blue);
+    color: var(--white);
+    fill: var(--white);
+}
+div.page{
+    /* width: 84%; */
+    background-color: var(--Gray);
+}
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="pageConnexion pagecontenu">
+    <div class="contenupage carte bd20 sh443012">
+      <div class="sectionConnexion fcs">
+        <div class="titreApp fre">
+          <img src="../Statiques/logo.png" alt="logo" width="70px">
+          <h1>Microfinance</h1>
+        </div>
+        <div class="titreFormulaire fcs">
+          <p class="text">Adminstrateur</p>
+          <p class="nom">
+          <h1>Se connecter</h1>
+          </p>
+        </div>
+        <div class="formulairSeconnecter fcs">
+          <form class="login-form deux fcs" action="./src/Controlleurs/Seconnecter.php" method="post">
+            <div class="divInput fcs">
+              <label class="lb" for="nom_utilisateur">nom d'utilisateur</label>
+              <input class="pc" type="text" required placeholder="votre nom d'utilisateur" name="nom_utilisateur"
+                id="nom_utilisateur" />
+            </div>
+            <div class="divInput fcs">
+              <label class="lb" for="mot_de_passe">mot de passe</label>
+              <input class="pc" type="password" required placeholder="votre mot de passe" name="mot_de_passe"
+                id="mot_de_passe" />
+            </div>
+            <div class="divBouton frc">
+              <button class="btn btn-primary">se connecter</button>
+            </div>
+            <div class="divMessage frc">
+              <p class="message"></p>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="Sectiongauche">
+        <img src="../Statiques/illustation.png" alt="" srcset="" height="100%">
+        <div class="aproppos">
+          <h4 class="titreAppropos">
+            A-propos de notre microfinance
+          </h4>
+          <p class="object">
+            Chez nous, notre engagement est d'offrir des solutions financières inclusives et adaptées à chacun. Forts de
+            notre expérience, nous sommes déterminés à accompagner nos clients dans la réalisation de leurs projets et
+            aspirations.
+          </p>
+          <h5 class="futur">
+            changer votre vie
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

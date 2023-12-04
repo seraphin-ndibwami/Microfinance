@@ -1,0 +1,16 @@
+{
+    "name": "vendor/microfinance",
+    "description": "Une application Web pour la gestion de base d'une microfinance",
+    "autoload": {
+        "psr-4": {
+            "Microfinance\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "seraphin",
+            "email": "seraphinndibwami@gmail.com"
+        }
+    ],
+    "require": {}
+}

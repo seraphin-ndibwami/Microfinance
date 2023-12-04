@@ -1,0 +1,37 @@
+/* clients */
+div.page{
+    padding: 2rem 5rem;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    
+  }
+table tr:first-child th:first-child{
+    border-radius: 10px 0px 0px 0px;
+}
+table tr:first-child th:last-child{
+    border-radius: 0px 10px 0px 0px;
+}
+table th {
+    font-size: small;
+    background-color: var(--secondary-blue); /* Arrière-plan bleu */
+    color: var(--white); /* Texte blanc */
+    padding: 10px; /* Espacement intérieur */
+}
+
+/* Style pour le corps du tableau */
+table td {
+    text-align: right;
+    font-size: small;
+    padding: 10px; /* Espacement intérieur */
+}
+
+/* Couleur différente pour lignes paires et impaires */
+table tr:nth-child(even) {
+    background-color: var(--Gray); /* Arrière-plan pour lignes paires */
+}
+
+table tr:nth-child(odd) {
+    background-color: var(--white); /* Arrière-plan pour lignes impaires */
+}
